@@ -1,0 +1,4 @@
+goodslist=1,"Lenovo",3000,0;2,"ViewSonic",1000,0;
+complatelist=1,"Lenovo",3000,1;2,"ViewSonic",1000,2;1,"Lenovo",3000,1;2,"ViewSonic",1000,2;1,"Lenovo",3000,1;2,"ViewSonic",1000,2;1,"Lenovo",3000,1;2,"ViewSonic",1000,2;1,"Lenovo",3000,1;2,"ViewSonic",1000,2;1,"Lenovo",3000,1;2,"ViewSonic",1000,2;
+i=1;
+userMoney=-10000
