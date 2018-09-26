@@ -2,170 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e39f7dd6-038b-43c9-86b3-e190d0df9ff1" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/day10/app-client.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/day10/app-server.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/day10/greenlet_自动切换.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/day10/greenlet携程.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/day10/hostconfig" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/day10/hostsmanager.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/day10/libclient.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/day10/libserver.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/day10/pachong.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/day10/poll_server.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/day10/proccess_test.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/day10/process_manager1.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/day10/process_pipe.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/day10/process_queue.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/day10/python_lock.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/day10/python_pool.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/day10/select_server.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/day10/select_socket_ftp.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/day10/select_socket_server.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/day10/select_test_server.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/day10/selector_client.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/day10/selector_server.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/day10/threading_test1.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/day10/threading_test2.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/day10/threading_test3.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/day10/threading_test4.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/day10/threading_test5.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/day10/threading_test6.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/day10/threading_test7.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/day10/生产者与消费者.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/day10/简单爬虫.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/day10/红绿灯.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/day10/队列.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/day11/direct_consumer.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/day11/direct_publisher.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/day11/fanout_consummer.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/day11/fanout_producer.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/day11/pymysql_test1.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/day11/pymysql_test2.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/day11/rabbitmq_test1.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/day11/rabbitmq_test_client.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/day11/rabbitmq持久化.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/day11/rabbitmq持久化消费者.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/day11/redis_test1.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/day11/rpc_client.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/day11/rpc_server.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/day11/topic_comsummer.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/day11/topic_publiser.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/day2/encode_file.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/day2/hello_openfile.txt" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/day2/hello_openfile.txt.bak" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/day2/openfile.txt" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/day2/py_openfile.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/day2/字符编码与解码.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/day2/文件修改.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/day3/func_test1.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/day3/func_test2.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/day3/mall_cart.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/day4/decorate_1.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/day4/decorator_2.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/day4/test1.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/day5/json反序列化.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/day5/json序列化.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/day5/test.txt" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/day5/内置函数.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/day5/斐波那契数.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/day5/生成器并行.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/day6/Atm/bin/__init__.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/day6/Atm/conf/__init__.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/day6/Atm/core/__init__.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/day6/Atm/logger/__init__.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/day6/__init__.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/day6/binary_search.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/day6/configparser模块.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/day6/create_xml.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/day6/db.config" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/day6/example.log" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/day6/findSmallest.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/day6/hashlib_test.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/day6/hashlib模块.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/day6/hmac模块.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/day6/json反序列化.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/day6/json序列化.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/day6/json模块.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/day6/license.txt" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/day6/logging模块.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/day6/my.ini" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/day6/os模块.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/day6/pickle反序列化.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/day6/pickle序列化.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/day6/pickle模块.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/day6/python.tar" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/day6/python计算器.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/day6/random模块.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/day6/re模块.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/day6/shelve模块.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/day6/shutil模块.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/day6/suprocess模块.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/day6/sys模块.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/day6/test.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/day6/test_config.ini" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/day6/test_shelf.db.bak" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/day6/test_shelf.db.dat" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/day6/test_shelf.db.dir" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/day6/testshutil/bin/__init__.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/day6/testshutil/conf/__init__.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/day6/testshutil/core/__init__.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/day6/testshutil/logger/__init__.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/day6/time模块.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/day6/xml_test.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/day6/xml_test3.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/day6/xml模块.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/day7/__init__.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/day7/dkls.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/day7/serarch_BFS.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/day7/voter.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/day8/Demo.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/day8/__new__.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/day8/classes.txt" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/day8/coures.txt" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/day8/courses.txt" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/day8/metaclass.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/day8/ooptest.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/day8/ooptest2.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/day8/py_inherit.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/day8/py_inherit2.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/day8/school.txt" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/day8/student.txt" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/day8/teacher.txt" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/day8/创建类的第二种方法.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/day8/反射.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/day8/属性方法.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/day8/异常处理.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/day8/描述类.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/day8/类方法.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/day8/自定义异常.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/day8/静态方法.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/day8/面向对象作业.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/day9/SocketServer基础.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/day9/__init__.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/day9/ftp_client/core/FtpClient.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/day9/ftp_client/core/threading_test1.py.new" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/day9/ftp_client/core/网站运维技术与实践.pdf" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/day9/ftp_server/core/main.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/day9/ftp_server/core/网站运维技术与实践.pdf" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/day9/lib/Demo.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/day9/paramiko_transport.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/day9/paramiko模块.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/day9/select_client.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/day9/socket_client.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/day9/socket_client1.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/day9/socket_client2.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/day9/socket_ftp_client" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/day9/socket_ftp_client.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/day9/socket_ftp_server.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/day9/socket_server.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/day9/socket_server1.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/day9/socket_server2.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/day9/socket_ssh_client.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/day9/socket_ssh_server.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/day9/socket_ssh_server.py.new" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/day9/动态导入模块.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/pingpang/main.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/pingpang/pong.kv" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -710,7 +546,14 @@
       <option name="project" value="LOCAL" />
       <updated>1537935406519</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="提交">
+      <created>1537936156609</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1537936156609</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TodoView">
@@ -759,7 +602,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="连接mysql" />
-    <option name="LAST_COMMIT_MESSAGE" value="连接mysql" />
+    <MESSAGE value="提交" />
+    <option name="LAST_COMMIT_MESSAGE" value="提交" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
