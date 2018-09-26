@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding" defaultCharsetForPropertiesFiles="UTF-8">
+    <file url="file://$PROJECT_DIR$/day2/encode_file.py" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/day2/字符编码与解码.py" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/day6/example.log" charset="UTF-8" />
     <file url="PROJECT" charset="UTF-8" />
   </component>
 </project>

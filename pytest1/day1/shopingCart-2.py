@@ -47,7 +47,8 @@ for line in Lines:
         if complate != ['']:
             for temp in complate:
                 # 2.1把分割出来的商品信息加入空列表
-                newCart.append(temp.split(','))
+                shopingCart.append(temp.split(','))
+                print('第一次登录购物车',shopingCart)
 
     elif line.startswith('i'):
         times=int(line[line.index('=')+1:-2])
@@ -120,10 +121,10 @@ while True:
 
         for tt1 in goodsList:
             lgood += str(tt1[0]) + ',' + tt1[1] + ',' + str(tt1[2]) + ',' + str(
-                int(tt1[3]) - shopingCart.count(tt1)) + ';'
+                int(tt1[3]) - newCart.count(tt1)) + ';'
         totalMoney = 0
-        for tt2 in newCart:
-            sgoods += str(tt2[0]) + ',' + tt2[1] + ',' + str(tt2[2]) + ',' + str(shopingCart.count(tt2)) + ';'
+        for tt2 in shopingCart:
+            sgoods += str(tt2[0]) + ',' + tt2[1] + ',' + str(tt2[2]) + ',' + str(newCart.count(tt2)) + ';'
         fileq = open(r'c:\Python\practice\goods.txt', 'w')
         fileq.write('goodslist=' + lgood + '\n' + 'complatelist=' + sgoods + '\n' + 'i=' + str(
             times + 1) + ';\n' + 'userMoney=' + str((userMoney - totalMoney)))
@@ -136,53 +137,84 @@ while True:
     for strID in idList:
         intList.append(int(strID))
 
-    #如果是第一次登录，购物车没有任何东西，
-    # 将用户输入的商品id跟商品id对比，如果相等，再判断跟购物车就加入购物车。
-    #统计购物车商品数量？商品id,在加入购物车之前，判断id是否和购物车中的商品相等
-    #相等，商品数量+1，不相等，直接加入购物车，数量为1
-##如果是 第二次登录，  将用户输入的商品id跟商品id对比，如果相等，再判断跟购物车中的id是否相等，如果相等则购物车中的数量加一
+    #如果购物车没有任何东西
+    tempID={}
+    for inputId in intList:
+        tempID[inputId] = intList.count(inputId)
+    tempSP=[]
+    for sp in shopingCart:
+        tempSP.append(sp[0])
+    def addGoods():
+        for tid in tempID.keys():
+            for goods in goodsList:
+                if tid == int(goods[0]):
+                    tempCart1 = []
+                    tempCart1.extend(goods)
+                    tempCart1[3]=tempID.get(tid)
+                    shopingCart.append(tempCart1)
 
 
-    totalMoney=0
-    #shopingCart = []
-    for sid in intList:
-        for goodTemp in goodsList:
-            # 如果用户输入的id在商品列表的id中，就将其加入购物车
-            if sid==int(goodTemp[0]) :
-
-                #显示已购商品列表
-
-                shopingCart.append(goodTemp)
-
-                # for spc in shopingCart:
-                #     if spc not in newCart:
-                #         newCart.append(spc)
-                if newCart==[]:
-                    newCart.append(goodTemp)
-
-                    newCart[newCart.index(goodTemp)][3] = 1
-
+    if shopingCart==[]:
+        addGoods()
+    else:
+        for id in tempID.keys():
+            for sp in shopingCart:
+                if int(sp[0]) == id:
+                    sp[3] = str(int(sp[3]) + tempID.get(id))
+                    break
                 else:
-                    for spc in newCart:
+                    addGoods()
 
-                        if int(spc[0])==sid:
-                            spc[3]=int(spc[3])+1
-                            continue
-                        else:
-                            newCart.append(goodTemp)
-                            newCart[newCart.index(goodTemp)][3] = 1
 
-    print(shopingCart)
+
+
+
+    #
+    # if shopingCart==[]:
+    #     for inputId in intList:
+    #         for goodTemp in goodsList:
+    #             if inputId == int(goodTemp[0]):
+    #                 tempCart1=[]
+    #                 tempCart1.extend(goodTemp)
+    #                 tempCart1[3]=1
+    #                 shopingCart.append(tempCart1)
+    #
+    #                 print('this test--->',goodsList)
+    #
+    # #如果购物车里有商品，那么则判断购物车商品中的商品id是否与用户输入的Id相等，相等则数量+1。不相等就直接加入购物车。
+    # else:
+    #     #shopingCart != []:
+    #     for inputId2 in intList:
+    #         for goodTemp2 in shopingCart:
+    #             for goodsTemp in goodsList:
+    #                 if inputId2 == int(goodTemp2[0]):
+    #                     goodTemp2[3]=int(goodTemp2[3])+1
+    #                     break
+    #
+    #                 else:
+    #                     if inputId2==int(goodsTemp[0]):
+    #                         tempCart3 = []
+    #                         tempCart3.extend(goodsTemp)
+    #                         tempCart3[3] = 1
+    #                         shopingCart.append(tempCart3)
+    #
+    #             break
+    #         break
+    #
+    #
+    #
+    #
+    #
+
     # 显示商品列表
 
     print("-" * 25, "已购商品列表", "-" * 25)
     print("商品编号      商品名称          商品价格         商品数量")
     print("-" * 50)
-    # for tt1 in shopingCart:
-    #     totalMoney +=int(tt1[2])
 
-    for tt in newCart:
-
+    totalMoney=0
+    for tt in shopingCart:
+        totalMoney=totalMoney+int(tt[3])*int(tt[2])
         print("   %d          %s             %d            %d " % (
             int(tt[0]), tt[1], int(tt[2]), int(tt[3])))
         print("-" * 50)
@@ -193,26 +225,38 @@ while True:
     if userMoney-totalMoney>0:
         lgood = ''
         sgoods = ''
-
         for tt2 in goodsList:
-            for tt3 in newCart:
-                if tt2[0]==tt3[0]:
-                    lgood += str(tt2[0]) + ',' + tt2[1] + ',' + str(tt2[2]) + ',' + str(int(tt2[3])-tt3[3]) + ';'
+            for tt3 in shopingCart:
+                if tt3[0]==tt2[0]:
+                    if tt2[3]==100:
+                        tt2[3]=int(tt2[3]) - int(tt3[3])
+                    else:
+                        tt2[3]=100-int(tt3[3])
 
-                totalMoney += int(tt3[2])*int(tt3[3])
-                sgoods+=str(tt3[0]) + ',' + tt3[1] + ',' + str(tt3[2]) + ',' + str(tt3[3]) + ';'
-        filein = open(r'c:\Python\practice\goods.txt', 'w')
-        filein.write('goodslist='+lgood+'\n'+'complatelist='+sgoods+'\n'+'i='+str(times+1)+';\n'+ 'userMoney='+str((userMoney-totalMoney)))
-        filein.flush()
-        filein.close()
+                sgoods += str(tt3[0]) + ',' + tt3[1] + ',' + str(tt3[2]) + ',' + str(tt3[3]) + ';'
+            lgood += str(tt2[0]) + ',' + tt2[1] + ',' + str(tt2[2]) + ',' + str(tt2[3]) + ';'
 
-        print("你的账户余额还剩：\033[31;1m%d\033[0m" %(userMoney-totalMoney),"元")
+
+        if userMoney==2000:
+            filein = open(r'c:\Python\practice\goods.txt', 'w')
+            filein.write('goodslist='+lgood+'\n'+'complatelist='+sgoods+'\n'+'i='+str(times+1)+';\n'+ 'userMoney='+str((userMoney-totalMoney)))
+            print("你的账户余额还剩：\033[31;1m%d\033[0m" % (userMoney - totalMoney), "元")
+        else:
+            filein = open(r'c:\Python\practice\goods.txt', 'w')
+            filein.write('goodslist=' + lgood + '\n' + 'complatelist=' + sgoods + '\n' + 'i=' + str(
+                times + 1) + ';\n' + 'userMoney=' + str((20000 - totalMoney)))
+            print("你的账户余额还剩：\033[31;1m%d\033[0m" % (20000 - totalMoney), "元")
+
+
+
+
     else:
         print("\033[31;1m您的账户余额已不足！\033[0m")
         break
 
-
-
+    filein.flush()
+    filein.close()
+    #根据商品ID来，加入购物车1，2，3加入。
 
 
 
