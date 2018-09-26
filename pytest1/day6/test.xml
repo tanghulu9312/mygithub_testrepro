@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Students>
+    <student heigh="175cm" sex="male" weight="65kg">
+        <id>10001</id>
+        <name>zhangsan</name>
+        <classes>六年级（一）班</classes>
+    </student>
+    <student heigh="165cm" sex="fmale" weight="45kg">
+        <id>10002</id>
+        <name>李四</name>
+        <classes>六年级（二）班</classes>
+    </student>
+</Students>

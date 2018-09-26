@@ -1,0 +1,15 @@
+[webserver]
+hostname=122testserver,131testserver
+ip=192.168.8.122,192.168.8.131
+port=22,22
+username=tanghu,tanghu
+password=admin123,admin123
+
+
+
+[dataserver]
+hostname=121paramiry
+ip=192.168.8.121
+port=22
+username=tanghu
+password=admin123
